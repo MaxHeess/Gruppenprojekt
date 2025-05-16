@@ -1,0 +1,551 @@
+body {
+    background-color: #FFE4B5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    padding-bottom: 60px;
+}
+@media(max-width: 480px) {
+    body {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 100px;
+    }
+    .header img {
+        width: 70%;
+        padding-left: 50px;
+        padding-bottom: 20px;
+    }
+    .nav-links {
+        padding-bottom: 20px;
+    }
+    .info-image3 {
+        display: none;
+    }
+    .icon-link img{
+        width: 1%;
+    }
+    .contact-container {
+        padding-left: 50px !important;  /* Wichtigeres Styling für padding-left */
+        font-size: 16px;  /* Falls du auch die Schriftgröße anpassen möchtest */
+        margin-left: 0 !important;  /* Margin kann eventuell auch das Layout beeinflussen */
+        margin-right: 0 !important;
+    }
+    .text-container3 {
+        padding-left: 10px !important;  /* Wichtigeres Styling für padding-left */
+        padding-right: 10px !important;
+        margin-left: 0 !important;  /* Margin kann eventuell auch das Layout beeinflussen */
+        margin-right: 0 !important;
+    }
+}
+.icon {
+    width: 15%;
+}
+.nav-links a {
+    color: #005dd9;
+    background-color: #FF6347;
+    text-decoration: none;
+    border: 2px solid #005dd9;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.product-container {
+    display: flex;
+    justify-content:space-around; /* Bilder von links nach rechts */
+    flex-wrap: wrap;
+    margin-top: 100px;
+    gap: 20px; /* Abstand zwischen den Bildern */
+    padding: 20px;
+    background-color: transparent;
+}
+/* Einzelne Produktkarte */
+.product-card {
+    text-align: center;
+    max-width: 200px;
+    border: 2px solid #FF6347;
+    padding: 55px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.product-card:hover {
+    background-color: #FF6347;
+}
+/* Bild in der Produktkarte */
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+/* Titel und Preis */
+.product-card h3 {
+    color: #005dd9;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FF6347;
+    margin-top: 10px;
+}
+.icon-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+.icon-link img {
+    width: 40px; 
+    height: auto;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.icon-link:hover img {
+    transform: scale(1.1); 
+}
+.nav-links a:hover {
+    border: 4px solid #005dd9;
+    text-decoration: none; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 1720px) {
+    h1 {
+        font-size: 2vw;
+        transform:none;
+        margin-left: 20px;
+    }
+    .nav-links a {
+        font-size: 1vw;
+    }
+}
+@media (max-width: 1490px) {
+    .header {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    h1 {
+        display: none;
+    }
+    .nav-links a {
+        font-size: 1.5vw;
+    }
+}
+.header {
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF6347;
+    /* padding: 20px; */
+    /* padding-left: 50px; */
+    padding-right: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    font-family: DynaPuff, sans-serif;
+}
+h1 {
+    font-size: 3vw;
+    color: #005dd9;
+    transform: rotate(-10deg);
+}
+img {
+    width: 25%;
+}
+.text-container {
+    color: black;
+    /* padding-left: 50px;
+    padding-right: 50px; */
+    /* font-size: 20px; */
+}
+.text-container p { 
+    font-size: 25px;
+    /* text-align: justify;  */
+}
+.text-container h2 { 
+    font-size: 35px;
+    /* text-align: justify;  */
+}
+.text-container {
+    text-align: center;
+    margin-top: 50px;
+}
+.text-container3 {
+    text-align: left;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 20px;
+}
+.text-container3 p { 
+    font-size: 20px;
+    
+}
+.footer {
+    background-color: transparent;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+.impressum {
+    background-color: transparent;
+    color:#FF6347;
+    text-decoration: none; 
+    border: none;
+    font-weight: bolder;
+    padding: 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.impressum:hover {
+    text-decoration: underline; 
+    border: none;
+}
+table, th, td, caption {
+    border: thin solid black;
+}
+table {
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 30px;  /* Verringert den Abstand zwischen den Zellen */
+    table-layout: auto;
+    max-width: 80%;  /* Die maximale Breite der Tabelle wird auf 60% gesetzt */
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+th, td {
+    font-weight: normal;
+    text-align: center;
+    padding: 20px;  /* Verringert das Padding in den Zellen */
+    font-size: 18px;  /* Reduziert die Schriftgröße für eine schmalere Ansicht */
+}
+th, caption {
+    font-weight: bolder;
+    font-size: 22px;  /* Verringert die Schriftgröße für Überschriften */
+    font-style: italic;
+}
+.contact-container {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    padding-left: 150px;
+    background-color: transparent;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    background-color: #f8f1e504;
+    width: 75%; 
+    padding: 12px; 
+    border: 1px solid #0f0f0f; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 17px;
+}
+textarea {
+    height: 200px;
+}
+.styled-button {
+    color: #005dd9;
+    background-color: #FF6347;
+    text-decoration: none;
+    border: 2px solid #005dd9;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: DynaPuff, sans-serif;
+    cursor: pointer;
+}
+.styled-button:hover {
+    border: 4px solid #005dd9;
+    text-decoration: none; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Shahrouz ---------------------------------------------------------------------*/
+
+/* Styling für Info Section mit Bild links und Text rechts */
+
+.info-section2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 0;
+    max-width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.info-image2 {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.info-text2 {
+    max-width: 600px;
+    flex: 1;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.info-section {
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: center; */
+    gap: 20px;
+    padding: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Damit es sich auf mobilen Geräten untereinander anordnet */
+}
+
+.info-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    order: 1; /* Bild links anordnen */
+}
+
+.info-text {
+    max-width: 600px;
+    order: 2; /* Text rechts anordnen */
+    flex: 1;
+    text-align: justify;
+}
+
+.info-text h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.info-text p {
+    font-size: 20px;
+    /* color: #666; */
+    line-height: 1.5;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    font-size: 1em;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    font-size: 1em;
+    color: #333;
+    z-index: 1000; /* Damit der Footer über anderen Inhalten liegt */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional: ein leichter Schatten */
+}
+
+/* Responsive Design für kleinere Bildschirme */
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column; /* Bild und Text untereinander bei kleinen Bildschirmen */
+    }
+
+    .info-text h2 {
+        font-size: 1.5em;
+    }
+
+    .info-text p, .footer {
+        font-size: 1em;
+    }
+}
+
+.leistungsuebersicht {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.leistungsuebersicht h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.columns {
+    display: flex;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+}
+
+.column h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.column ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.column ul li {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.column ul li ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.column ul li ul li {
+    font-size: 0.95em;
+    margin-bottom: 5px;
+}
+
+
+
+
+.text-container2 {
+    color: black;
+    /* padding-left: 50px;
+    padding-right: 50px; */
+    /* font-size: 20px; */
+}
+.text-container2 p { 
+    font-size: 20px;
+    /* text-align: justify;  */
+}
+.text-container2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+/* Shahrouz ---------------------------------------------------------------------*/
+
+/* files input  */
+
+.upload-container {
+
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-items: flex-start; */
+    flex-wrap: wrap; /* Damit es sich auf mobilen Geräten untereinander anordnet */
+    
+    gap: 50px;
+    padding: 20px;
+/*! height: 100vh; */
+    background-color: #f5f5f5;
+    /* margin: 0; */
+    
+    border: 2px dashed #FF6347;
+    border-radius: 10px;
+    padding: 30px;
+    width: 90%;
+    text-align: center;
+    background-color: #fff3de;
+    margin: 0 auto; 
+    /* position: relative;
+    top: 50%;   */
+    transform: translateY(-50%);
+    min-width: 300px;
+    
+  }
+
+  .upload-container h3 {
+    margin: 0;
+    color: #FF6347;
+  }
+
+  .upload-area {
+    border: 2px dashed #FF6347;
+    padding: 20px;
+    margin-top: 20px;
+    color: schwarz;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fff3de;
+  }
+
+  .upload-area.dragover {
+    background-color: #fff3de;
+  }
+
+  .image-preview {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .input[type="file"] {
+    display: none;
+  }
+
+  /* files input fin */
+
+  .info-image3 {
+    
+    width: auto;
+    height: 300px;
+    border-radius: 8px;
+    order: 1; /* Bild links anordnen */
+  }
+
+  /* Buttons Produktseite __________________________________________________________________*/
+    
+    .button-produkte1 {
+        background-color: #fff3de; 
+        color: rgb(49, 49, 49); /* Gray */ 
+        border: 2px solid #FF6347;
+        font-size: 16px;
+        padding: 10px 24px;
+        border-radius: 12px;
+        transition-duration: 0.4s;
+        width: 300px;
+        
+    }
+    .button-produkte1:hover {
+            background-color: #FF6347; /* Green */
+            color: white;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    /*the container must be positioned relative:*/
