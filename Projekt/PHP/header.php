@@ -27,10 +27,10 @@ $_SESSION['last_activity'] = time();
 
 <?php if (isset($_SESSION["kunde"])): ?>
     <?php
-        $servername = "localhost";
-        $username = "d04212b7";
-        $password = "Artus.2008";
-        $dbname = "d04212b7";
+        $servername = 
+        $username = 
+        $password = 
+        $dbname = 
         try {
             $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8mb4", $username, $password);
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
