@@ -24,10 +24,10 @@ $_SESSION['last_activity'] = time();
 
 // Wenn das Formular abgeschickt wurde, den Login-Prozess starten
 if(isset($_POST['email'])){
-    $servername = "localhost";
-    $username = "d04212b7";
-    $password = "Artus.2008";
-    $dbname = "d04212b7";
+    $servername = 
+    $username = 
+    $password = 
+    $dbname = 
 
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8mb4", $username, $password);
