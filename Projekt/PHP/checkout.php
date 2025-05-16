@@ -22,10 +22,10 @@ if(!isset($_SESSION["kunde"])){
     echo "<button type='button' class='styled-button' onclick=\"window.location.href='login.php';\" style='display: block; margin: 0 auto; text-align: center;'>Bitte zuerst anmelden</button>";
 }else{
     // Datenbankverbindung herstellen
-    $servername = "localhost";
-    $username = "d04212b7";
-    $password = "Artus.2008";
-    $dbname = "d04212b7";
+    $servername =
+    $username = 
+    $password = 
+    $dbname =
 
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8mb4", $username, $password);
