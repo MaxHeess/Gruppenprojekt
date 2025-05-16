@@ -43,10 +43,10 @@ include('../PHP/header.php');
         
         <?php
         // Datenbankverbindung herstellen
-        $servername = "localhost";
-        $username = "d04212b7";
-        $password = "Artus.2008";
-        $dbname = "d04212b7";
+        $servername = 
+        $username = 
+        $password = 
+        $dbname = 
 
         try {
             $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8mb4", $username, $password);
